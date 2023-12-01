@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Iterator_Pattern
 {
-    internal class Iterator
+    public interface Iterator
     {
+        // Iterator interface with methods to check if there's a next element and retrieve the next element
+        bool HasNext();
+        object Next();
     }
 }
